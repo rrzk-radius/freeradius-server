@@ -32,7 +32,7 @@ License: GPLv2+ and LGPLv2+
 Group: System Environment/Daemons
 URL: http://www.freeradius.org/
 
-Source0: ftp://ftp.freeradius.org/pub/radius/freeradius-server-%{version}.tar.bz2
+Source0: ftp://ftp.freeradius.org/pub/radius/freeradius-server-%{version}.tar.gz
 
 Obsoletes: freeradius-devel
 Obsoletes: freeradius-libs
