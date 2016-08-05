@@ -388,7 +388,7 @@ install -D -m 755 redhat/freeradius-radiusd-init $RPM_BUILD_ROOT/%{initddir}/rad
 
 #install -D -m 644 %{SOURCE102} $RPM_BUILD_ROOT/%{_sysconfdir}/logrotate.d/radiusd
 install -D -m 644 redhat/freeradius-logrotate $RPM_BUILD_ROOT/%{_sysconfdir}/logrotate.d/radiusd
-install -D -m 644 %{SOURCE103} $RPM_BUILD_ROOT/%{_sysconfdir}/pam.d/radiusd
+#install -D -m 644 %{SOURCE103} $RPM_BUILD_ROOT/%{_sysconfdir}/pam.d/radiusd
 install -D -m 644 redhat/freeradius-pam-conf $RPM_BUILD_ROOT/%{_sysconfdir}/pam.d/radiusd
 
 # remove unneeded stuff
