@@ -26,7 +26,7 @@
 
 Summary: High-performance and highly configurable free RADIUS server
 Name: freeradius
-Version: 3.0.13
+Version: 3.0.14
 Release: 1%{?dist}
 License: GPLv2+ and LGPLv2+
 Group: System Environment/Daemons
@@ -791,6 +791,9 @@ fi
 
 
 %changelog
+* Fri Aug 05 2016 rrzk-radius <radius-mgr@uni-koeln.de> 3.0.14-1
+- use gz in specfile (radius-mgr@uni-koeln.de)
+
 * Fri Aug 05 2016 rrzk-radius <radius-mgr@uni-koeln.de> 3.0.13-1
 - new package built with tito
 
