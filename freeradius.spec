@@ -791,6 +791,10 @@ fi
 
 
 %changelog
+* Tue Aug 09 2016 rrzk-radius <radius-mgr@uni-koeln.de> 3.0.12-2
+- 3.0.12-2 (radius-mgr@uni-koeln.de)
+- Test for release specification (radius-mgr@uni-koeln.de)
+
 * Tue Aug 09 2016 rrzk-radius <radius-mgr@uni-koeln.de> 3.0.12-1
 - 
 
