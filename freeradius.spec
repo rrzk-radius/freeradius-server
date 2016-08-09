@@ -26,7 +26,7 @@
 
 Summary: High-performance and highly configurable free RADIUS server
 Name: freeradius
-Version: 3.0.17
+Version: 3.0.12
 Release: 1%{?dist}
 License: GPLv2+ and LGPLv2+
 Group: System Environment/Daemons
@@ -791,6 +791,9 @@ fi
 
 
 %changelog
+* Tue Aug 09 2016 rrzk-radius <radius-mgr@uni-koeln.de> 3.0.12-1
+- 
+
 * Tue Aug 09 2016 rrzk-radius <radius-mgr@uni-koeln.de> 3.0.17-1
 - SPEC file as symlink (radius-mgr@uni-koeln.de)
 
