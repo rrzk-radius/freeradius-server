@@ -26,13 +26,13 @@
 
 Summary: High-performance and highly configurable free RADIUS server
 Name: freeradius
-Version: 3.0.12
-Release: 2%{?dist}
+Version: 3.0.16
+Release: 1%{?dist}
 License: GPLv2+ and LGPLv2+
 Group: System Environment/Daemons
 URL: http://www.freeradius.org/
 
-Source0: ftp://ftp.freeradius.org/pub/radius/freeradius-server-%{version}.tar.bz2
+Source0: ftp://ftp.freeradius.org/pub/radius/freeradius-%{version}.tar.gz
 
 Obsoletes: freeradius-devel
 Obsoletes: freeradius-libs
@@ -294,7 +294,7 @@ This plugin provides YubiCloud support for the FreeRADIUS server project.
 
 
 %prep
-%setup -q -n freeradius-server-%{version}
+%setup -q -n freeradius-%{version}
 # Some source files mistakenly have execute permissions set
 # find $RPM_BUILD_DIR/freeradius-server-%{version} \( -name '*.c' -o -name '*.h' \) -a -perm /0111 -exec chmod a-x {} +
 
@@ -791,5 +791,20 @@ fi
 
 
 %changelog
+* Tue Aug 09 2016 rrzk-radius <radius-mgr@uni-koeln.de> 3.0.16-1
+- Change name in SPEC from freeradius-server to freeradius (radius-mgr@uni-
+  koeln.de)
+
+* Tue Aug 09 2016 rrzk-radius <radius-mgr@uni-koeln.de> 3.0.15-1
+- Remove python tests.  They only fail on the cutdown built, and we need travis
+  working on v3.0.x (a.cudbardb@freeradius.org)
+- Update dictionary.ruckus (Maka0@users.noreply.github.com)
+
+* Fri Aug 05 2016 rrzk-radius <radius-mgr@uni-koeln.de> 3.0.14-1
+- use gz in specfile (radius-mgr@uni-koeln.de)
+
+* Fri Aug 05 2016 rrzk-radius <radius-mgr@uni-koeln.de> 3.0.13-1
+- new package built with tito
+
 * Wed Sep 25 2013 Alan DeKok <aland@freeradius.org> - 3.0.0
 - upgrade to latest upstream release
