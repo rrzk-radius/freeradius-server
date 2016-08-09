@@ -26,7 +26,7 @@
 
 Summary: High-performance and highly configurable free RADIUS server
 Name: freeradius
-Version: 3.0.15
+Version: 3.0.16
 Release: 1%{?dist}
 License: GPLv2+ and LGPLv2+
 Group: System Environment/Daemons
@@ -791,6 +791,10 @@ fi
 
 
 %changelog
+* Tue Aug 09 2016 rrzk-radius <radius-mgr@uni-koeln.de> 3.0.16-1
+- Change name in SPEC from freeradius-server to freeradius (radius-mgr@uni-
+  koeln.de)
+
 * Tue Aug 09 2016 rrzk-radius <radius-mgr@uni-koeln.de> 3.0.15-1
 - Remove python tests.  They only fail on the cutdown built, and we need travis
   working on v3.0.x (a.cudbardb@freeradius.org)
