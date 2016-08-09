@@ -32,7 +32,7 @@ License: GPLv2+ and LGPLv2+
 Group: System Environment/Daemons
 URL: http://www.freeradius.org/
 
-Source0: ftp://ftp.freeradius.org/pub/radius/freeradius-server-%{version}.tar.gz
+Source0: ftp://ftp.freeradius.org/pub/radius/freeradius-%{version}.tar.gz
 
 Obsoletes: freeradius-devel
 Obsoletes: freeradius-libs
@@ -294,7 +294,7 @@ This plugin provides YubiCloud support for the FreeRADIUS server project.
 
 
 %prep
-%setup -q -n freeradius-server-%{version}
+%setup -q -n freeradius-%{version}
 # Some source files mistakenly have execute permissions set
 # find $RPM_BUILD_DIR/freeradius-server-%{version} \( -name '*.c' -o -name '*.h' \) -a -perm /0111 -exec chmod a-x {} +
 
